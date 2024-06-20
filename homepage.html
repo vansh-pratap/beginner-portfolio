@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vansh - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="homepage_stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <a href="/portfolio/homepage.html"><span class="purple">VanshPratap</span>.DEV</a>
+            </div>
+
+            <div class="right">
+                <ul>
+                    <li><a href="/portfolio/homepage.html"><i class="fa-solid fa-house"> </i> Home</a></li>
+                    <li><a href="/portfolio/about.html"><i class="fa-solid fa-user"> </i> About</a></li>
+                    <li><a href="/portfolio/projects.html"><i class="fa-solid fa-code-fork"> </i> Projects</a></li>
+                    <li><a href="/portfolio/resume.html"><i class="fa-solid fa-file"> </i> Resume</a></li>
+                </ul>
+            </div>
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi There! <span class="emoji">👋</span>
+                <div>My name is <span class="lavender">Vansh</span></div> <br>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="/portfolio/images/home-main.359935c39288e92d4dba5c9f2445b91d.svg" alt="">
+            </div>
+        </section>
+
+        <footer>
+            <div class="lastLeft"> Develop & Design &copy; 2024 | VS</div>
+            <div class="lastCenter">Made with <i class="fa-sharp fa-solid fa-heart" style="color: #e70d0d;"></i> by Vansh !!
+            </div>
+            <div class="lastRight">
+                <ul>
+                    <li><a href="mailto:vanshptatapsingh13122002@gmail.com"><i class="fa-solid fa-envelope"
+                                style="color: #ffffff;"></i></a></li>
+                    <li><a href="https://github.com/vansh-pratap" target="_blank"><i class="fa-brands fa-github"
+                                style="color: #ffffff;"></i></a>
+                    </li>
+                    <li><a href="https://x.com/VanshPratap20?t=ISdqbnDQQFP1knZIvMKPAA&s=08" target="_blank"><i
+                                class="fa-brands fa-x-twitter" style="color: #ffffff;"></i></a></li>
+
+                    <li><a href="https://www.linkedin.com/in/vansh-pratap-singh-a59a90250" target="_blank"><i
+                                class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a></li>
+                    <li><a href="https://www.instagram.com/vansh._.pratap/" target="_blank"><i
+                                class="fa-brands fa-instagram" style="color: #ffffff;"></i></a></li>
+
+                </ul>
+            </div>
+        </footer>
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web/App Developer', 'Graphic Designer', 'Content Creator'],
+            typeSpeed: 80, loop: true
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navRight = document.querySelector('nav .right');
+            menuToggle.addEventListener('click', function () {
+                navRight.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

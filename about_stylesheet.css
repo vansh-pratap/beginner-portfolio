@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    background-image: linear-gradient(270deg, #1b1429, #140f23);  
+}
+/* body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/portfolio/images/home-bg.dc52d5d40a40b13154b0.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    opacity: 0.4;
+    z-index: -1;
+    border-radius: 2px;  
+} */
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    font-size: 15px;
+    position: fixed;
+    backdrop-filter: blur(17px);
+    top: 0;
+    width: 100%;
+    color: white;
+    padding: 0 0;
+    z-index: 1000;
+    box-shadow: 0 10px 10px 0 rgba(9, 5, 29, .171)
+
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    letter-spacing: 0.5;
+}
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    background-color: #c76ff0;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+nav ul li a:hover:after {
+    width: 100%;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-around;   
+}
+
+/* colour theme of webpages */
+.purple {
+    color: purple;  
+}
+.lightPurple {
+   color: #c477e7;
+}
+
+
+.left {
+    font-size: 2.5rem;
+}
+.left a {
+    text-decoration: none;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+.leftSection {
+    font-size: 20px;
+    margin: 30px 60px;
+    width: 50%;
+    padding: 30px;
+    margin-left: 150px;
+}
+.leftSection div {
+    margin: 10px;
+}
+.rightSection img {
+    width: 80%;
+    margin: 0px 0;
+}
+
+.heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.heading .purple {
+    margin: 100px;
+    font-size: 40px;
+    margin-bottom: 80px;
+}
+
+
+.skillset {
+    padding: 20px;
+    text-align: center;
+    margin: 20px 31px;
+}
+.skillset h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #8a2be2;
+}
+.skillset .skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.skillset .skills .skill {
+    margin: 10px;
+    padding: 20px;
+    width: 180px;
+    border-radius: 10px;
+    border: 2px solid #8a2be2 ;
+    box-shadow: 0 3px 5px #8a2be2;;
+    color: #ffffff;
+}
+.skill img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.skills :hover {
+    transform: scale(1.05);
+    transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+footer {
+    background: #310031;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer ul {
+    display: inline-flex;
+    justify-content: space-around;
+}
+footer ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+.lastLeft {
+    margin: 0 10px;
+}
+.lastRight ul li a i{
+    font-size: 15px;
+}
+
+
+
+
+
+
+/*  ///////////////////////////////////////////////   */
+
+
+
+
+
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section ul {
+    padding-left: 20px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #444;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
